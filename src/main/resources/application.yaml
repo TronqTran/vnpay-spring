@@ -1,1 +1,12 @@
-spring.application.name=vnpay-spring
+spring:
+  application:
+    name: vnpay-spring
+payment:
+  vnPay:
+    url: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html
+    tmnCode:
+    secretKey:
+    returnUrl: http://localhost:8080/api/v1/payment/vn-pay-callback
+    version: 2.1.0
+    command: pay
+    orderType: other
